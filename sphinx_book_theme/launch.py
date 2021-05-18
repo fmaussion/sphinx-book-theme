@@ -96,8 +96,8 @@ def add_hub_urls(
     colab_url = launch_buttons.get("colab_url")
     if binderhub_url:
         url = (
-            f"{binderhub_url}/v2/gh/OGGM/binder/master?urlpath=git-pull?"
-            f"repo={repo_url}%26amp%3Bbranch=master%26amp%3Burlpath={ui_pre}/{repo}/{path_rel_repo}%3Fautodecode"
+            f"{binderhub_url}/v2/gh/OGGM/binder/stable?urlpath=git-pull%3F"
+            f"repo={repo_url}%26urlpath%3Dlab%252Ftree%252F{repo}/{path_rel_repo}%26branch%3D{branch}"
         )
         context["binder_url"] = url
 
